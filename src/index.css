@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+nav{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 300;
+}
+
+.landing{
+  height: 100vh;
+  background-image: url('./assets/landing.png');
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  .content{
+    z-index: 100;
+    margin-left: 200px;
+    margin-bottom: 200px;
+  }
+}
+
+.landing::before{
+  content: '';
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
